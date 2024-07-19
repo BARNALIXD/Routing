@@ -1,6 +1,7 @@
 
 import { NavLink } from 'react-router-dom';
 
+// children application
 const Nav = () => {
   return (
     <nav className='mt-10 flex justify-center gap-10'>
@@ -22,6 +23,7 @@ const Nav = () => {
 
 
 
+//style application
     <NavLink 
     style={(e)=>{
       return {
@@ -35,7 +37,7 @@ const Nav = () => {
 
 
 
-
+//className application
     <NavLink 
      className={(e)=>{
       return [
