@@ -4,19 +4,19 @@ import { NavLink } from 'react-router-dom';
 const Nav = () => {
   return (
     <nav className='mt-10 flex justify-center gap-10'>
-
-
-
-    <NavLink 
-    style={(e)=>{
-    return {
-      color: e.isActive ? 'tomato' : '',
-      fontWeight: e.isActive ? 'bold' : '', 
-    };
-    }} 
-    to="/"
-    >
-    Home
+    <NavLink to="/">
+    {(e) => {
+      return (
+      <span 
+      className={[
+        e.isActive? "text-red-300" : " ",
+        e.isActive? "text-bold" : " ",
+      ].join(" " )}
+      >
+        Home
+      </span>
+  );
+}}
     </NavLink>
 
 
@@ -41,7 +41,7 @@ const Nav = () => {
       return [
         e.isActive ? "text-red-300" : " ",
         e.isActive ? "text-bold" : " ",
-      ].join("")
+      ].join("");
      }}
     to="/about">
     About
