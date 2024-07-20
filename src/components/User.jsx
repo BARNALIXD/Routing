@@ -4,10 +4,20 @@ const User = () => {
   return (
     <div className=' w-1/2 m-auto mt-10'>
     <h1 className='text-red-200 text-5xl mb-2 '>User</h1>
-    <p className='mb-2 text-zinc-500'>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti pariatur optio alias placeat nemo eos enim. Consequuntur beatae, quidem ut veniam nesciunt, modi magnam sunt distinctio numquam repudiandae saepe rerum!
-      </p>
-      <button className='text-white p-3 bg-zinc-300'>Explore More</button>
+    
+    <div className='flex w-1/2 flex-col mt-5'>
+      <Link className="p-3 bg-red-200 text-2xl mb-3 hover:bg-red-300" to="/user/Chingu">
+      Chingu
+      </Link>
+      <Link className="p-3 bg-red-200 text-2xl mb-3 hover:bg-red-300" to="/user/Mingu">
+      Mingu
+      </Link>
+      <Link className="p-3 bg-red-200 text-2xl mb-3 hover:bg-red-300" to="/user/Tingu">
+       Tingu
+      </Link>
+
+    </div>
+    
   </div>
   )
 }
