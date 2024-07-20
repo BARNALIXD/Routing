@@ -7,7 +7,11 @@ const UserDetail = () => {
   const navigate = useNavigate()
 
   const GoBackhandler =() =>{
-    navigate("/user");
+
+
+    //code to submit form in the database
+    //navigate("/user");
+    navigate(-1);
 x  };
  
 

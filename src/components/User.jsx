@@ -1,4 +1,5 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 
 const User = () => {
   return (
@@ -17,7 +18,9 @@ const User = () => {
       </Link>
 
     </div>
-    
+
+    <hr/>
+    <Outlet/>
   </div>
   )
 }
